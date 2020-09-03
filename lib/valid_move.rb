@@ -7,9 +7,9 @@ def between?(board, index)
 end
 
 def valid_move?(board,index)
-  if position_taken?(board,index)
+  if between?(board, index)
     return false
-  elsif between?(board, index)
+  elsif position_taken?(board,index)
   return true
   end
 end
