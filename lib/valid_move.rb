@@ -1,5 +1,5 @@
 def between?(board, index)
-  if board[index] == (0 - 8)
+  if board[index] == (0, 8)
     return true
   else
     return false
