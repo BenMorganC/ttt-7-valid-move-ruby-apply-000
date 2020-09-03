@@ -23,7 +23,7 @@ def valid_move?(board, index)
     return false
   end
 end
-end
+
 
     
     
