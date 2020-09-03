@@ -6,7 +6,7 @@ def between?(board, index)
   end
 end
 
-def position_taken?(board,index)
+def position_taken?(board, index)
   if board[index] == " " || board[index] == "" || board[index] == nil
     return false 
   else 
@@ -14,10 +14,10 @@ def position_taken?(board,index)
   end
 end
 
-def valid_move?(board,index)
-  if position_taken?(board,index)
+def valid_move?(board, index)
+  if position_taken?(board, index)
     return false
-  else between?(index)
+  else between?(board, index)
     return true
   end
 end
