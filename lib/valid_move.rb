@@ -15,8 +15,9 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, index)
-  if position_taken?(board, index) || between?(board, index) != (0 - 8)
+  if position_taken?(board, index)
     return false
+  elsif board[index] != (0 - 8)
   else between?(board, index)
     return true
   end
